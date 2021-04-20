@@ -1,0 +1,26 @@
+ 
+api:
+  dashboard: true
+  insecure: true
+
+entryPoints:
+    web:
+      address: ":80"
+  
+    websecure:
+      address: ":443"
+           
+  
+certificatesResolvers:
+    myresolver:
+      acme:
+        email: abolfati@gmail.com
+        storage: /etc/traefik/acme.json
+        httpChallenge:          
+          entryPoint: web  
+       
+    
+providers:  
+  file:
+    filename: "/etc/traefik/all.yml"
+    watch: true          

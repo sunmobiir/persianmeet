@@ -1,0 +1,78 @@
+ 
+version: '3.1'
+
+services:
+
+    traefik:
+        container_name: traefik
+        image:  traefik:v2.3
+        restart: on-failure
+        networks:
+            - meetnet
+        ports:
+            - 80:80
+            - 443:443
+            - 8080:8080                          
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ${dataPath}traefik/:/etc/traefik/
+             
+        depends_on:
+            - proom            
+
+    mqtt:
+        container_name: mqtt
+        image: eclipse-mosquitto
+        restart: always
+        networks:
+            - meetnet
+        ports:
+            - 9001:9001
+            - 1883:1883                 
+        volumes:            
+            - ${dataPath}mqtt/:/mosquitto/config           
+
+    libre:
+        container_name: libre
+        image: collabora/code:6.4.0.6
+        restart: always
+        networks:
+            - meetnet        
+        ulimits:
+          core: -1
+        ports:
+            - 9980:9980          
+        environment:
+            - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:welcome.enable=false --o:net.frame_ancestors=${myDomian}
+            - username=ali
+            - password=pass11
+            - domain=${myDomian}
+        
+    sfu:
+        container_name: sfu
+        image: alit771/sfu:v6
+        restart: always
+        networks:
+            - meetnet
+        ports:
+            - 7000:7000
+            - "5000-5200:5000-5200/udp"                            
+
+    proom:
+        container_name: proom
+        image: alit771/proom:b130
+        restart: on-failure
+        networks:
+            - meetnet
+        ports:
+            - 4001:5000    
+        environment:
+            - myDomian=${myDomian}
+            - lang=${lang}
+            - secret=$secret
+        volumes:
+            - ${dataPath}:/root/linux12/wwwroot/files/
+
+networks:
+  meetnet: {}
+         
