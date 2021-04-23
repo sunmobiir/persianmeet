@@ -36,7 +36,7 @@ http:
     mqtt:
       loadBalancer:        
         servers:          
-          - url: http://mqtt:9001          
+          - url: http://mqtt:8083          
             
     libre:
       loadBalancer:        
