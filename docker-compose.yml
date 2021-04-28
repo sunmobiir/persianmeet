@@ -63,7 +63,7 @@ services:
 
     proom:
         container_name: proom
-        image: alit771/proom:b135
+        image: alit771/proom:b137
         restart: on-failure
         networks:
             - meetnet
