@@ -10,7 +10,7 @@ http:
     mqtt:     
       rule: "Host(`myDomian`) && Path(`/mqtt`)"
       tls:
-        certResolver: myresolver2           
+        certResolver: myresolver          
       service: 'mqtt'
 
     libre:     
