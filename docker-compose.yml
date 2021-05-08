@@ -76,6 +76,15 @@ services:
         volumes:
             - ${dataPath}:/root/linux12/wwwroot/files/
 
+    monaco:
+        container_name: monaco
+        image: alit771/monaco:v1
+        restart: always
+        networks:
+            - meetnet
+        ports:
+            - 8181:8081
+
 networks:
   meetnet: {}
          

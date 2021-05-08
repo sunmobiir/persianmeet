@@ -18,13 +18,18 @@ http:
       tls:
         certResolver: myresolver      
       service: 'libre'
-
      
     sfu:     
       rule: "Host(`myDomian`) && Path(`/ws`)"
       tls:
         certResolver: myresolver           
       service: 'sfu'
+
+    monaco:     
+      rule: "Host(`myDomian`) && PathPrefix(`/mmonaco`)"
+      tls:
+        certResolver: myresolver           
+      service: 'monaco'
 
 
   services:
@@ -47,5 +52,10 @@ http:
       loadBalancer:        
         servers:         
           - url: http://sfu:7000
+
+    monaco:
+      loadBalancer:        
+        servers:          
+          - url: http://monaco:8081   
            
                    
