@@ -78,7 +78,7 @@ services:
 
     monaco:
         container_name: monaco
-        image: alit771/monaco:v1
+        image: alit771/monaco:v2
         restart: always
         networks:
             - meetnet
