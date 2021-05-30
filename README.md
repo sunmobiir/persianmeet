@@ -14,6 +14,7 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
     <li>Video and audio conferencing</li>
      <li>File sharing</li>
      <li>Polls</li>
+       <li>Collaborative code editor (javascript , html , css) - use Monaco</li>
      <li>Play video file</li>
      <li>Collaboration diagram</li>
      <li>Collaboration math editor</li>
