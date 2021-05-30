@@ -20,7 +20,7 @@ http:
       service: 'libre'
      
     sfu:     
-      rule: "Host(`myDomian`) && Path(`/ws`)"
+      rule: "Host(`myDomian`) && PathPrefix(`/sfu/`)"
       tls:
         certResolver: myresolver           
       service: 'sfu'
@@ -51,7 +51,7 @@ http:
     sfu:
       loadBalancer:        
         servers:         
-          - url: http://sfu:7000
+          - url: http://sfu:4443
 
     monaco:
       loadBalancer:        

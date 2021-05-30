@@ -1,4 +1,4 @@
- 
+
 api:
   dashboard: true
   insecure: true
@@ -6,9 +6,21 @@ api:
 entryPoints:
     web:
       address: ":80"
+      http:
+        redirections:
+          entryPoint:
+            to: websecure
+            scheme: https
+      
   
     websecure:
       address: ":443"
+
+    other:
+      address: ":447"    
+      
+    udpep:
+      address: ":446/udp"  
            
   
 certificatesResolvers:

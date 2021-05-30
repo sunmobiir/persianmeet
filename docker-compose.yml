@@ -2,7 +2,34 @@
 version: '3.1'
 
 services:
-
+    sfu:
+        container_name: sfu
+        image: alit771/mediasoup-demo:v1
+        restart: on-failure
+        networks:
+            - meetnet
+        ports:
+            - 4443:4443/tcp 
+            - 2000-3900:2000-3900/udp
+            - 2000-3900:2000-3900/tcp
+        environment:
+            - DEBUG="mediasoup:INFO* *WARN* *ERROR*" 
+            - INTERACTIVE="false" 
+            - DOMAIN=localhost
+            - PROTOO_LISTEN_PORT=4443  
+            - HTTPS_CERT_FULLCHAIN=/service/certs/live/sfu5.salampnu.ir/fullchain.pem 
+            - HTTPS_CERT_PRIVKEY=/service/certs/live/sfu5.salampnu.ir/privkey.pem 
+            - MEDIASOUP_LISTEN_IP=0.0.0.0
+            - MEDIASOUP_ANNOUNCED_IP=${myIP} 
+            - MEDIASOUP_MIN_PORT=2000
+            - MEDIASOUP_MAX_PORT=3900 
+            - MEDIASOUP_USE_VALGRIND=false 
+            - MEDIASOUP_VALGRIND_OPTIONS="--leak-check=full --track-fds=yes --log-file=/storage/mediasoup_valgrind_%p.log"  
+            - MEDIASOUP_WORKER_BIN  
+        volumes:            
+            - ${PWD}:/storage              
+            - ${dataPath}sfu/server.js:/service/server.js    
+            - /var/run/docker.sock:/var/run/docker.sock
     traefik:
         container_name: traefik
         image:  traefik:v2.3
@@ -32,7 +59,10 @@ services:
             - 8083:8083
             - 8084:8084  
             - 8883:8883
-            - 18083:18083       
+            - 18083:18083  
+        volumes:                
+            - ${dataPath}mqtt/emqx_web_hook.conf:/opt/emqx/etc/plugins/emqx_web_hook.conf
+            - ${dataPath}mqtt/loaded_plugins:/opt/emqx/data/loaded_plugins   
           
 
     libre:
@@ -49,21 +79,11 @@ services:
             - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:welcome.enable=false --o:net.frame_ancestors=${myDomian}
             - username=ali
             - password=pass11
-            - domain=${myDomian}
-        
-    sfu:
-        container_name: sfu
-        image: alit771/sfu:v6
-        restart: always
-        networks:
-            - meetnet
-        ports:
-            - 7000:7000
-            - "5000-5200:5000-5200/udp"                             
+            - domain=${myDomian}                                  
 
     proom:
         container_name: proom
-        image: alit771/proom:b141
+        image: alit771/proom:b154
         restart: on-failure
         networks:
             - meetnet
@@ -84,6 +104,7 @@ services:
             - meetnet
         ports:
             - 8181:8081
+                                 
 
 networks:
   meetnet: {}
