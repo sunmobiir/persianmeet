@@ -43,7 +43,7 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
   <p>Temporarily disable firewall</p>
   <p>if use windows server , disable iis to release 80 and 443 ports</p>
   <ul>
-  <li> install docker in your os </li>
+  <li> install docker and docker-compose in your os </li>
     <li>git clone https://github.com/sunmobiir/meetapp.git</li>
     <li> cd meetapp</li>
   <li> open .env file and replace example.com with a domain and enter your valid server ip</li>
