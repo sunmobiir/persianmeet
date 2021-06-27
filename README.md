@@ -14,7 +14,6 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
     <li>Video and audio conferencing</li>
      <li>File sharing</li>
      <li>Polls</li>
-       <li>Collaborative code editor (javascript , html , css) - use Monaco</li>
      <li>Play video file</li>
      <li>Collaboration diagram</li>
      <li>Collaboration math editor</li>
@@ -43,10 +42,10 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
   <p>Temporarily disable firewall</p>
   <p>if use windows server , disable iis to release 80 and 443 ports</p>
   <ul>
-  <li> install docker and docker-compose in your os </li>
+  <li> install docker in your os </li>
     <li>git clone https://github.com/sunmobiir/meetapp.git</li>
     <li> cd meetapp</li>
-  <li> open .env file and replace example.com with a domain and enter your valid server ip</li>
+  <li> open .env file and replace example.com with a domain or subdomain</li>
   <li>docker-compose up -d </li>
   </ul>
   <p>By executing the above command, Docker will run and download and install the software, as well as provide the required ssl use letsencrypt</p>

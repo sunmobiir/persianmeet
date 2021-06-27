@@ -10,8 +10,8 @@ services:
             - meetnet
         ports:
             - 4443:4443/tcp 
-            - 2000-3900:2000-3900/udp
-            - 2000-3900:2000-3900/tcp
+            - 2000-3000:2000-3000/udp
+            - 2000-3000:2000-3000/tcp
         environment:
             - DEBUG="mediasoup:INFO* *WARN* *ERROR*" 
             - INTERACTIVE="false" 
@@ -22,7 +22,7 @@ services:
             - MEDIASOUP_LISTEN_IP=0.0.0.0
             - MEDIASOUP_ANNOUNCED_IP=${myIP} 
             - MEDIASOUP_MIN_PORT=2000
-            - MEDIASOUP_MAX_PORT=3900 
+            - MEDIASOUP_MAX_PORT=3000 
             - MEDIASOUP_USE_VALGRIND=false 
             - MEDIASOUP_VALGRIND_OPTIONS="--leak-check=full --track-fds=yes --log-file=/storage/mediasoup_valgrind_%p.log"  
             - MEDIASOUP_WORKER_BIN  
@@ -83,7 +83,7 @@ services:
 
     proom:
         container_name: proom
-        image: alit771/proom:b154
+        image: alit771/proom:b162
         restart: on-failure
         networks:
             - meetnet
