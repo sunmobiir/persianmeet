@@ -7,10 +7,10 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
 <p><p> 
   <ul>
 <li>Advanced interactive whiteboard </li>
-<li>Collaboration online Office suite  </li>
+    <li>Collaboration online Office suite  </li>
     <li>Team collaboration</li>
-<li> Chat </li>
-<li>Desktop sharing</li>
+    <li> Chat </li>
+    <li>Desktop sharing</li>
     <li>Video and audio conferencing</li>
      <li>File sharing</li>
      <li>Polls</li>
@@ -19,6 +19,8 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
      <li>Collaboration math editor</li>
     <li>Member roles</li>
     <li>Permissions management </li>
+     <li>record (webm mp4 mkv format) </li>
+      <li>live (hls) </li>
 </ul>
 <h4>online demo </h4>
 <a href='https://en.learn100.ir/'>demo</a>
