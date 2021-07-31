@@ -77,6 +77,148 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
   <br /><a  target="_blank" href='https://microsoft.github.io/monaco-editor/'> Monaco Editor </a> 
  
   
+<h3>&nbsp;</h3>
+
+<h3>comparison of meetapp(learn100) and adobe connect and&nbsp;bigbluebutton</h3>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="3" cellspacing="1" style="width: 665px;">
+	<thead>
+		<tr>
+			<th scope="row" style="width: 251px;">&nbsp;</th>
+			<th scope="col" style="width: 125px;">adobe connect</th>
+			<th scope="col" style="width: 158px;">bigbluebutton</th>
+			<th scope="col" style="width: 90px;">meetApp</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>whiteboard</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>Office suite</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>desktop sharing</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;">
+			<p><strong>Video&nbsp;conferencing</strong></p>
+			</th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;">
+			<p><strong>file sharing</strong></p>
+			</th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;">
+			<p><strong>collaboration diagram</strong></p>
+			</th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;">
+			<p><strong>collaboration math editor</strong></p>
+			</th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>collaboration online IDE</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>record</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>record (webm , mp4,mkv)</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;">
+			<p><strong>+</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;">
+			<p><strong>live (hls)</strong></p>
+			</th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>stream to&nbsp;youtube ,&nbsp;instagram&nbsp;</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>breakout rooms</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>-</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;">
+			<p><strong>play video file</strong></p>
+			</th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>free&nbsp;</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>open source</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>-</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;">
+			<p>&nbsp;</p>
+			</th>
+			<td class="text-align-center" style="width: 125px;"><b>&nbsp;</b></td>
+			<td class="text-align-center" style="width: 158px;"><b>&nbsp;</b></td>
+			<td class="text-align-center" style="width: 90px;"><b>&nbsp;</b></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 
 
 
