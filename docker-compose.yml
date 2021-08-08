@@ -10,26 +10,29 @@ services:
             - meetnet
         ports:
             - 4443:4443/tcp 
-            - 2000-3000:2000-3000/udp
-            - 2000-3000:2000-3000/tcp
+            - 2700-3000:2700-3000/udp
+            - 2700-3000:2700-3000/tcp
         environment:
             - DEBUG="mediasoup:INFO* *WARN* *ERROR*" 
             - INTERACTIVE="false" 
             - DOMAIN=localhost
             - PROTOO_LISTEN_PORT=4443  
-            - HTTPS_CERT_FULLCHAIN=/service/certs/live/sfu5.salampnu.ir/fullchain.pem 
-            - HTTPS_CERT_PRIVKEY=/service/certs/live/sfu5.salampnu.ir/privkey.pem 
+            #- HTTPS_CERT_FULLCHAIN=/service/certs/live/sfu5.salampnu.ir/fullchain.pem 
+            #- HTTPS_CERT_PRIVKEY=/service/certs/live/sfu5.salampnu.ir/privkey.pem 
             - MEDIASOUP_LISTEN_IP=0.0.0.0
             - MEDIASOUP_ANNOUNCED_IP=${myIP} 
-            - MEDIASOUP_MIN_PORT=2000
+            - MEDIASOUP_MIN_PORT=2700
             - MEDIASOUP_MAX_PORT=3000 
             - MEDIASOUP_USE_VALGRIND=false 
             - MEDIASOUP_VALGRIND_OPTIONS="--leak-check=full --track-fds=yes --log-file=/storage/mediasoup_valgrind_%p.log"  
             - MEDIASOUP_WORKER_BIN  
         volumes:            
-            - ${PWD}:/storage              
+            #- ${PWD}:/storage              
             - ${dataPath}sfu/server.js:/service/server.js    
             - /var/run/docker.sock:/var/run/docker.sock
+        depends_on:
+            - cms  
+
     traefik:
         container_name: traefik
         image:  traefik:v2.3
@@ -43,9 +46,10 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
             - ${dataPath}traefik/:/etc/traefik/
-             
+        #command: chown 600 /etc/traefik/acme.json
+        #command: ["sh", "-c", "chmod -Rv 600 /etc/traefik/*"]   
         depends_on:
-            - proom            
+            - cms            
 
     mqtt:
         container_name: mqtt
@@ -62,7 +66,9 @@ services:
             - 18083:18083  
         volumes:                
             - ${dataPath}mqtt/emqx_web_hook.conf:/opt/emqx/etc/plugins/emqx_web_hook.conf
-            - ${dataPath}mqtt/loaded_plugins:/opt/emqx/data/loaded_plugins   
+            - ${dataPath}mqtt/loaded_plugins:/opt/emqx/data/loaded_plugins
+        depends_on:
+            - cms              
           
 
     libre:
@@ -79,22 +85,56 @@ services:
             - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:welcome.enable=false --o:net.frame_ancestors=${myDomian}
             - username=ali
             - password=pass11
-            - domain=${myDomian}                                  
+            - domain=${myDomian}
+        depends_on:
+            - cms  
 
-    proom:
-        container_name: proom
-        image: alit771/proom:b165
+    cms:
+        container_name: cms
+        image: alit771/cms:v1
+        restart: on-failure
+        networks:
+            - meetnet       
+        volumes:
+            - ${dataPath}/cms/cms:/var/www/html:cached
+            - ${dataPath}/cms/dbdata:/var/www/dbdata      
+            
+    mysql:
+        container_name: mysql
+        image: mariadb
         restart: on-failure
         networks:
             - meetnet
-        ports:
-            - 4001:5000    
+        #ports:
+        #    - 3306:3306    
+        environment:
+            - MARIADB_ROOT_PASSWORD=pppp         
+        volumes:
+            - ${dataPath}/cms/dbdata:/var/lib/mysql
+        depends_on:
+            - cms
+            - libre   
+            - sfu
+            - proom
+            - monaco   
+
+    proom:
+        container_name: proom
+        image: alit771/proom:b170
+        restart: on-failure
+        networks:
+            - meetnet
+        #ports:
+        #    - 4001:5000    
         environment:
             - myDomian=${myDomian}
             - lang=${lang}
             - secret=$secret
         volumes:
             - ${dataPath}:/root/linux12/wwwroot/files/
+        depends_on:
+            - cms            
+
 
     monaco:
         container_name: monaco
@@ -102,8 +142,10 @@ services:
         restart: always
         networks:
             - meetnet
-        ports:
-            - 8181:8081
+        #ports:
+        #    - 8181:8081
+        depends_on:
+            - cms            
                                  
 
 networks:

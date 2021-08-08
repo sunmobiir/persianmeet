@@ -1,8 +1,32 @@
-http:   
+http:
+  middlewares:
+    add-foo:
+      addPrefix:
+        prefix: "/psd"
+    example:
+      stripPrefix:
+        prefixes:
+          - "/psd"
+        forceSlash: false
+
   routers:
 
-    proom:     
+    proom2:     
+      rule: "Host(`myDomian`) && (PathPrefix(`/wopi/`) || PathPrefix(`/monaco`) || PathPrefix(`/webapp/`) || PathPrefix(`/VisualMathEditor/`))"
+      tls:
+        certResolver: myresolver      
+      service: 'proom'  
+      middlewares:
+        - "add-foo"     
+
+    cms:     
       rule: "Host(`myDomian`)"
+      tls:
+        certResolver: myresolver      
+      service: 'cms'  
+
+    proom:     
+      rule: "Host(`myDomian`) && (PathPrefix(`/psd/`))"
       tls:
         certResolver: myresolver      
       service: 'proom'  
@@ -37,6 +61,11 @@ http:
       loadBalancer:        
         servers:         
           - url: http://proom:5000
+
+    cms:
+      loadBalancer:        
+        servers:         
+          - url: http://cms:80
 
     mqtt:
       loadBalancer:        
