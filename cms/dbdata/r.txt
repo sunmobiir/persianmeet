@@ -1,1 +1,1 @@
-this folder use for drupal cms files
+this folder use for mysql data  files
