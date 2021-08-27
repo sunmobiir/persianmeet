@@ -91,7 +91,7 @@ services:
 
     cms:
         container_name: cms
-        image: alit771/cms:v1
+        image: alit771/cms:v2
         restart: on-failure
         networks:
             - meetnet       
@@ -120,7 +120,7 @@ services:
 
     proom:
         container_name: proom
-        image: alit771/proom:b170
+        image: alit771/proom:b172
         restart: on-failure
         networks:
             - meetnet
