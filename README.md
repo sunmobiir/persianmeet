@@ -199,6 +199,18 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
 			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
 		</tr>
 		<tr>
+			<th scope="row" style="width: 251px;"><strong>linux install</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
+			<th scope="row" style="width: 251px;"><strong>windows install</strong></th>
+			<td class="text-align-center" style="width: 125px;"><strong>+</strong></td>
+			<td class="text-align-center" style="width: 158px;"><strong>-</strong></td>
+			<td class="text-align-center" style="width: 90px;"><strong>+</strong></td>
+		</tr>
+		<tr>
 			<th scope="row" style="width: 251px;"><strong>open source</strong></th>
 			<td class="text-align-center" style="width: 125px;"><strong>-</strong></td>
 			<td class="text-align-center" style="width: 158px;"><strong>+</strong></td>
