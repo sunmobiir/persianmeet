@@ -120,7 +120,7 @@ services:
 
     proom:
         container_name: proom
-        image: alit771/proom:b172
+        image: alit771/proom:b173
         restart: on-failure
         networks:
             - meetnet
