@@ -44,6 +44,7 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
   <p style="text-align: left;">The installation process is very easy and can be installed in less than 5 minutes</p>
   <p>Temporarily disable firewall</p>
   <p>if use windows server , disable iis to release 80 and 443 ports</p>
+  <pre>
   <ul>
   <li> install docker and docker-compose in your os (for windows install docker desktop) </li>
     <li>git clone https://github.com/sunmobiir/meetapp.git</li>
@@ -51,6 +52,7 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
   <li> open .env file and replace example.com with a domain or subdomain and inter valid ip</li>
   <li>docker-compose up -d </li>
   </ul>
+  </pre>
   <p>By executing the above command, Docker will run and download and install the software, as well as provide the required ssl use letsencrypt</p>
   <p>wait 4 minutes to activate all services</p>
   <p>The software is installed Open the Chrome browser and enter the https://yourdomain.com</p>
