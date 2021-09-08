@@ -1,7 +1,7 @@
 # meetapp
 meetapp is free adobe connect alternatives for visual classrooms , online meetings, screen share,   webinars , video and audio conferencing.
 <div>
- <img src="/img/Capture.png" style="width:100%" /> 
+ <img src="/img/Capture-1.png" style="width:100%" /> 
 </div>
 <h2 align="center">Features</h2>
 <p><p> 
