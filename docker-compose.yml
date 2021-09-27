@@ -4,7 +4,7 @@ version: '3.1'
 services:
     sfu:
         container_name: sfu
-        image: alit771/mediasoup-demo:v1
+        image: ghcr.io/torkashvand630/mediasoup:v1
         restart: on-failure
         networks:
             - meetnet
@@ -35,7 +35,7 @@ services:
 
     traefik:
         container_name: traefik
-        image:  traefik:v2.3
+        image: ghcr.io/torkashvand630/traefik:1
         restart: on-failure
         networks:
             - meetnet
@@ -53,7 +53,7 @@ services:
 
     mqtt:
         container_name: mqtt
-        image: emqx/emqx:4.2.11
+        image: ghcr.io/torkashvand630/emqx:4.2.11
         restart: always
         networks:
             - meetnet
@@ -73,7 +73,7 @@ services:
 
     libre:
         container_name: libre
-        image: collabora/code:6.4.0.6
+        image: ghcr.io/torkashvand630/collaboracode:6.4.0.6
         restart: always
         networks:
             - meetnet        
@@ -91,7 +91,7 @@ services:
 
     cms:
         container_name: cms
-        image: alit771/cms:v2
+        image: ghcr.io/torkashvand630/cms:v2
         restart: on-failure
         networks:
             - meetnet       
@@ -101,7 +101,7 @@ services:
             
     mysql:
         container_name: mysql
-        image: mariadb
+        image: ghcr.io/torkashvand630/mariadb:latest
         restart: on-failure
         networks:
             - meetnet
@@ -120,7 +120,7 @@ services:
 
     proom:
         container_name: proom
-        image: alit771/proom:b173
+        image: ghcr.io/torkashvand630/proom:b173
         restart: on-failure
         networks:
             - meetnet
@@ -138,7 +138,7 @@ services:
 
     monaco:
         container_name: monaco
-        image: alit771/monaco:v2
+        image: ghcr.io/torkashvand630/monaco:v2
         restart: always
         networks:
             - meetnet
@@ -149,5 +149,4 @@ services:
                                  
 
 networks:
-  meetnet: {}
-         
+  meetnet: {}        
