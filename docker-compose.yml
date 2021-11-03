@@ -91,7 +91,7 @@ services:
 
     cms:
         container_name: cms
-        image: ghcr.io/torkashvand630/cms:v2
+        image: ghcr.io/torkashvand630/cms:v3
         restart: on-failure
         networks:
             - meetnet       
@@ -120,7 +120,7 @@ services:
 
     proom:
         container_name: proom
-        image: ghcr.io/torkashvand630/proom:b173
+        image: ghcr.io/torkashvand630/proom:b178
         restart: on-failure
         networks:
             - meetnet
