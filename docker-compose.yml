@@ -91,7 +91,7 @@ services:
 
     cms:
         container_name: cms
-        image: ghcr.io/torkashvand630/cms:v3
+        image: ghcr.io/torkashvand630/cms:v4
         restart: on-failure
         networks:
             - meetnet       
