@@ -120,7 +120,7 @@ services:
 
     proom:
         container_name: proom
-        image: ghcr.io/torkashvand630/proom:b178
+        image: ghcr.io/torkashvand630/proom:b182
         restart: on-failure
         networks:
             - meetnet
