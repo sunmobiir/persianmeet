@@ -50,7 +50,7 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
    install docker and docker-compose in your os (for windows install docker desktop)  
    $ git clone https://github.com/sunmobiir/meetapp.git
    $ cd meetapp
-   open .env file and replace example.com with a domain or subdomain and inter valid ip
+   open .env file and replace example.com with a domain or subdomain and inter valid ip (.env file is hidden)
    $ docker-compose up -d  
   
   </pre>
