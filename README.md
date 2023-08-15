@@ -14,22 +14,19 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
     <li>Video and audio conferencing</li>
      <li>File sharing</li>
      <li>Polls</li>
-     <li>Play video file</li>
-     <li>Collaboration diagram</li>
-     <li>Collaboration math editor</li>
+      
     <li>Member roles</li>
     <li>Permissions management </li>
-     <li>Collaboration online IDE (html javascript and css) </li>
-     <li>record (webm mp4 mkv format) </li>
-     <li>live (hls) </li>
+    
+   
 </ul>
 <h4>online demo </h4>
-<a href='https://en.learn100.ir/'>demo</a>
+<a href='https://learn100.ir/'>demo</a>
 <h4>os support</h4>
 <ul>
   <li>Linux server</li>
   <li>Windows server</li>
-  <li>FreeBSD </li>
+  
   </ul>
 <h4><strong>Requirements</strong></h4>
 <ul>
@@ -40,25 +37,10 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
  
  
 <h2 align="center">install meetapp</h2>
- 
-  <p style="text-align: left;">The installation process is very easy and can be installed in less than 5 minutes</p>
-  <p>Temporarily disable firewall</p>
-  <p>if use windows server , disable iis to release 80 and 443 ports</p>
+ <a href='https://doc.learn100.ir/docs/install/installation'>instal localhost windows and linux</a>
+  <a href='https://doc.learn100.ir/docs/install/deploy'>deploy windows server</a>
+   <a href='https://doc.learn100.ir/docs/install/deploy_ubuntu'>deploy linux server</a>
   
-  <pre>
-  
-   install docker and docker-compose in your os (for windows install docker desktop)  
-   $ git clone https://github.com/sunmobiir/meetapp.git
-   $ cd meetapp
-   open .env file and replace example.com with a domain or subdomain and inter valid ip (.env file is hidden)
-   $ docker-compose up -d  
-  
-  </pre>
-  <p>By executing the above command, Docker will run and download and install the software, as well as provide the required ssl use letsencrypt</p>
-  <p>wait 4 minutes to activate all services</p>
-  <p>The software is installed open the chrome browser and enter the https://yourdomain.com</p>
-  <p>admin login ==== user : 'admin' and  pass : 'public' </p>   
-  <br /> <br /> <p>To develop this software, free and open source packages have been used, which include the following : </p>
     
    
  
