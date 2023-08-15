@@ -13,15 +13,14 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
     <li>Desktop sharing</li>
     <li>Video and audio conferencing</li>
      <li>File sharing</li>
-     <li>Polls</li>
-      
+     <li>Polls</li>      
     <li>Member roles</li>
     <li>Permissions management </li>
     
    
 </ul>
 <h4>online demo </h4>
-<a href='https://learn100.ir/'>demo</a>
+<a href='https://learn100.ir/?lang=en'>demo</a>
 <h4>os support</h4>
 <ul>
   <li>Linux server</li>
@@ -37,13 +36,15 @@ meetapp is free adobe connect alternatives for visual classrooms , online meetin
  
  
 <h2 align="center">install meetapp</h2>
- <a href='https://doc.learn100.ir/docs/install/installation'>instal localhost windows and linux</a>
-  <a href='https://doc.learn100.ir/docs/install/deploy'>deploy windows server</a>
-   <a href='https://doc.learn100.ir/docs/install/deploy_ubuntu'>deploy linux server</a>
-  
+<ul>
+<li> <a href='https://doc.learn100.ir/docs/install/installation'>instal localhost windows and linux</a></li>
+ <li> <a href='https://doc.learn100.ir/docs/install/deploy'>deploy windows server</a></li>
+ <li>  <a href='https://doc.learn100.ir/docs/install/deploy_ubuntu'>deploy linux server</a></li>
+</ul>
     
    
- 
+  <p></p>   
+  <br /> <br /> <p>To develop this software, free and open source packages have been used, which include the following : </p>
  
   <br /><a  target='_blank' href='https://github.com/webrtc'>webrtc</a> for audio and video conference
   <br /><a  target="_blank" href='https://github.com/open-webrtc-toolkit/owt-server'>intel&reg; collaboration suite</a> for webrtc
