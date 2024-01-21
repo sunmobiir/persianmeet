@@ -1,5 +1,5 @@
-# meetapp
-meetapp is free adobe connect alternatives for visual classrooms , online meetings, screen share,   webinars , video and audio conferencing.
+# persianmeet
+persianmeet is free adobe connect alternatives for visual classrooms , online meetings, screen share,   webinars , video and audio conferencing.
 <div>
  <img src="/img/Capture-2.png" style="width:100%" /> 
 </div>
