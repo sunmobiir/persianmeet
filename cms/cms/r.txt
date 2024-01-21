@@ -1,1 +1,0 @@
-this folder use for drupal cms files 
