@@ -6,18 +6,25 @@ persianmeet is free adobe connect alternatives for visual classrooms , online me
 <h2 align="center">Features</h2>
 <p><p> 
   <ul>
-<li>Advanced interactive whiteboard </li>
-    <li>Collaboration online Office suite  </li>
+	<li>Advanced interactive whiteboard </li>
+    <li>Collaboration online Office suite</li>
     <li>Team collaboration</li>
     <li> Chat </li>
     <li>Desktop sharing</li>
     <li>Video and audio conferencing</li>
-     <li>File sharing</li>
-     <li>Polls</li>      
+    <li>File sharing</li>   
     <li>Member roles</li>
     <li>Permissions management </li>
-    
-   
+	<li>Polls</li>   
+	<li>Q & A</li>
+    <li>notes </li>
+	<li>diagram</li>
+    <li>media player </li>
+	<li>web Links</li>
+	<li>Recording & broadcasting</li>
+    <li>Easy install & self-hosting</li>
+	<li> Annotate PDFs & Office files live</li>
+
 </ul>
 <h4>online demo </h4>
 <a href='https://learn100.ir/?lang=en'>demo</a>
