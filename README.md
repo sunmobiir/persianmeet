@@ -42,7 +42,7 @@ persianmeet is free adobe connect alternatives for visual classrooms , online me
   </ul>
  
  
-<h2 align="center">install meetapp</h2>
+<h2 align="center">install persianmeet</h2>
 <ul>
 <li> <a href='https://doc.learn100.ir/docs/install/installation'>instal localhost windows and linux</a></li>
  <li> <a href='https://doc.learn100.ir/docs/install/deploy'>deploy windows server</a></li>
