@@ -21,6 +21,7 @@ persianmeet is free adobe connect alternatives for visual classrooms , online me
 	<li>diagram</li>
     <li>media player </li>
 	<li>web Links</li>
+	<li>Raise Hand</li>
 	<li>Recording & broadcasting</li>
     <li>Easy install & self-hosting</li>
 	<li> Annotate PDFs & Office files live</li>
