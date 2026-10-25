@@ -73,7 +73,7 @@ persianmeet is free adobe connect alternatives for visual classrooms , online me
   
 <h3>&nbsp;</h3>
 
-<h3>comparison of meetapp(learn100) and adobe connect and&nbsp;bigbluebutton</h3>
+<h3>comparison of persianmeet and adobe connect and&nbsp;bigbluebutton</h3>
 
 <p>&nbsp;</p>
 
@@ -83,7 +83,7 @@ persianmeet is free adobe connect alternatives for visual classrooms , online me
 			<th scope="row" style="width: 251px;">&nbsp;</th>
 			<th scope="col" style="width: 125px;">adobe connect</th>
 			<th scope="col" style="width: 158px;">bigbluebutton</th>
-			<th scope="col" style="width: 90px;">meetApp</th>
+			<th scope="col" style="width: 90px;">persianmeet</th>
 		</tr>
 	</thead>
 	<tbody>
